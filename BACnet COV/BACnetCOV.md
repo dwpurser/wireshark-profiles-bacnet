@@ -9,7 +9,7 @@ Contributors:
 
 November 2019
 
-###1	Description and Objective
+### 1	Description and Objective
 
 This document summarizes the files and configuration of this Wireshark profile for use in analyzing general BACnet COV (Change of Value).
 
@@ -95,13 +95,17 @@ Enter the values for a specific device you are investigating
 * Enter IP address in IPV4 format nnn.nnn.nnn.nnn
 
 **SubscribeCOV**
+
 These packets are subscriptions requests and replies that include current value.
 
 **ConfirmedCOV**
+
 These packets are sent when value changes by COV increment and require subscribing controller to reply with confirmation. This communication should be monitored to make sure updates are not send more than 4 times per minute. Confirmed COV require a reply, so are used for important communications, but also require more bandwidth because of reply and retransmits if no reply is received.
 
 **UnconfirmedCOV**
+
 These packets are sent when value changes by COV increment and require no reply. This communication should be monitored to make sure updates are not send more than 4 times per minute.
 
 **UnconfirmedCOV Multiple**
+
 These packets are sent when values change by COV increment and are sent at once. It does not require reply. This communication should be monitored to make sure updates are not send more than 4 times per minute.
