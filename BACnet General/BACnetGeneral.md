@@ -4,6 +4,7 @@
 **Revision 19.11** - Initial Release
 
 Prepared By: David Purser
+
 Contributors: 
 
 November 2019
@@ -91,7 +92,9 @@ Disabled by default.
 ### 8	Troubleshooting Scenarios
 
 **BACnet Only**
+
 Use this button to filter down to BACnet packets only. 
+
 One can export only the BACnet packets with this process:
 1.	Click BACnet Only button
 2.	Go to File -> Export Specified Packets
@@ -101,24 +104,35 @@ One can export only the BACnet packets with this process:
 
 
 Instance ID
+
 IP Addr
+
 IP Dst
+
 IP Src
+
 Enter the values for a specific device you are investigating
-•	Enter Device Instance ID in range from 0 to 4,194,302 (4,194,303 is Unconfigured)
-•	Enter IP address in IPV4 format nnn.nnn.nnn.nnn
+
+* Enter Device Instance ID in range from 0 to 4,194,302 (4,194,303 is Unconfigured)
+
+* Enter IP address in IPV4 format nnn.nnn.nnn.nnn
 
 **Broadcasts**
+
 These packets are broadcast to all devices. One can delete the part of the filter you do not require to filter the Global, IP, and MSTP down further.
 
 **I & Who**
+
 These packets are for I-Am, I-Have, Who-Is, Who-Has for device discovery from Frontend, Application like WorkPlaceTech, or another BACnet device looking to subscribe or reference BACnet device or object.
 
 **Hop Count**
+
 This looks for Hop Count less than 10 that identifies packets that have passed through multiple routers, more than by design, indicating there is a routing loop issue.
 
 **Time Sync**
+
 Identifying time sync packets that may be sending out incorrect time or flooding the system
 
 **Errors**
+
 Identifying error packets to be investigated.
