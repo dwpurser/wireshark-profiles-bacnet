@@ -1,0 +1,2 @@
+"Range of IP Addresses" net 10.110.210.0 mask 255.255.255.0
+"BACnet/IP UDP Ports" udp port 47810 and udp port 47809 and udp port 47810
